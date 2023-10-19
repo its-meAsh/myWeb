@@ -1,0 +1,91 @@
+@font-face{
+	font-family: my;
+	src: url(poppins.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--color: rgb(48,210,197);
+	--fontDark: #26a89d;
+	--fontLight: #acede7;
+}
+body{
+	background-color: var(--color);
+	color: var(--fontDark);
+	font-family: my;
+	text-align: center;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+header{
+	text-align: center;
+	padding: 2vh;
+	font-weight: bolder;
+	text-shadow: 0px 0px 10px var(--fontLight);
+	font-size: calc(1.75vw + 1vh);
+	background: rgba(0,0,0,0.1)
+}
+main{
+	width: 66vh;
+	margin: auto;
+}
+#time{
+	color: var(--fontLight);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+	align-content: space-around;
+}
+#timeSpan{
+	font-size: 6vw;
+}
+#sub{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 1vw;
+	text-shadow: 0px 0px 3px var(--fontDark)
+}
+#time>h1{
+	font-size: 5vw;
+	margin: 4vh;
+}
+
+#searchBox{
+	background-color: var(--fontDark);
+	border: 1px solid white;
+	border-radius: 1vh;
+	width: 100%;
+	padding: 2vh;
+	color: var(--fontLight);
+	font-weight: bold;
+	font-family: my;
+}
+
+#visitSites{
+	border-radius: 1vh;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	margin-top: 10vh;
+}
+.siteBar{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	padding: 4vh;
+	transition: background-color 0.2s linear;
+}
+.siteBar:hover{
+	background-color: white;
+}
+.siteBar:hover a{
+	color: black;
+}
